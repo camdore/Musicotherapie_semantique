@@ -82,15 +82,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#est_du_style -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#est_du_style">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Musique"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style_de_musique"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#est_inteprété_par -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#est_inteprété_par">
@@ -187,6 +178,15 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Prénom">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Individu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Musique"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -400,15 +400,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style_de_musique -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style_de_musique">
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-03T10:18:28Z</dc:date>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Tristesse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Tristesse">
@@ -434,36 +425,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Instrument_à_cordes"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-03T10:49:02Z</dc:date>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#jazz -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#jazz">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style_de_musique"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-03T10:21:25Z</dc:date>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#pop -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#pop">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style_de_musique"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-03T10:21:25Z</dc:date>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#rock -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#rock">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Style_de_musique"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gabriel</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-03T10:21:25Z</dc:date>
     </owl:Class>
     
 
@@ -512,14 +473,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Instrument_à_cordes"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Instrument_à_percussion"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#Instrument_à_vent"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#jazz"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#pop"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/gabriel/ontologies/2023/2/untitled-ontology-4#rock"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
