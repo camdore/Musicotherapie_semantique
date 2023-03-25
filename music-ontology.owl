@@ -1,0 +1,2240 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology/"
+     xml:base="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:music-ontology="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#APourCaracteristiqueMusicale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#APourCaracteristiqueMusicale">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">a pour caractéristique musicale</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#APourCauseEmotionnelle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#APourCauseEmotionnelle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">a pour cause émotionnelle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#APourEffetEmotionnel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#APourEffetEmotionnel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">a pour effet émotionnel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AgitSur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AgitSur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AppartientAuTypeDeMusique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AppartientAuTypeDeMusique">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">appartient au type de musique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Chante -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Chante">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Interprète"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ecoute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ecoute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:53:59Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstComposéeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstComposéeDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonBrut"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstEcouteDansLeContexte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstEcouteDansLeContexte">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">est écoutée dans le contexte</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstEcritePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstEcritePar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auteur"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstInterprétéePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstInterprétéePar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Interprète"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstMembreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstMembreDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MembreGroupe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MembreOrchestre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeMusique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeOrchestre"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstUnEffetEmotionnelDeType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EstUnEffetEmotionnelDeType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">est un effet émotionnel de type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InfluenceLeTypeDeMusique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InfluenceLeTypeDeMusique">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">influence le type de musique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InfluenceLesCaracteristiquesDeLaMusique -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InfluenceLesCaracteristiquesDeLaMusique">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label>influence les caractéristiques de la musique</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InfluenceLesEmotions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InfluenceLesEmotions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:33:24Z</dc:date>
+        <rdfs:label xml:lang="fr">influence les émotions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Groupe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:50:43Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AnnéeSortie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AnnéeSortie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:15:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Année de sortie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ConfortEcoute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ConfortEcoute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:19:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Confort d&apos;écoute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#DuréeEmotion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#DuréeEmotion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:12:38Z</dc:date>
+        <rdfs:label xml:lang="fr">Durée de l&apos;émotion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#IntensitéEmotion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#IntensitéEmotion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:12:38Z</dc:date>
+        <rdfs:label xml:lang="fr">Intensité de l&apos;émotion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NiveauDetachement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NiveauDetachement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:19:03Z</dc:date>
+        <rdfs:label>Niveau de détachement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NiveauDistraction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NiveauDistraction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:19:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Niveau de distraction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auditeur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:22:45Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NomGroupe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NomGroupe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Groupe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:24:07Z</dc:date>
+        <rdfs:label xml:lang="fr">Nom du groupe</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NomScene -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NomScene">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:49:32Z</dc:date>
+        <rdfs:label xml:lang="fr">Nom de scène</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#PopularitéMusique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#PopularitéMusique">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:15:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Popularité de la musique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Prénom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Prénom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:22:45Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#QualitéSonore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#QualitéSonore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:19:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Qualité sonore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TempsEcoute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TempsEcoute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:19:03Z</dc:date>
+        <rdfs:label>Temps d&apos;écoute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Titre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Titre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:22:45Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#VolumeSonore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#VolumeSonore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:19:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Volume sonore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AccordMajeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AccordMajeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harmonie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:36Z</dc:date>
+        <rdfs:label xml:lang="fr">Accord majeur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AccordMineur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AccordMineur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harmonie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:36Z</dc:date>
+        <rdfs:label xml:lang="fr">Accord mineur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Accordéon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Accordéon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruAutres"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:45Z</dc:date>
+        <rdfs:label xml:lang="fr">Activité en cours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Adagio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Adagio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Agitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Agitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:59Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Allegro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Allegro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Alto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Alto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:36Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Andante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Andante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Anxiété -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Anxiété">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:59Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Apaisement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Apaisement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:42:12Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AprèsMidi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AprèsMidi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MomentJournée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:56:53Z</dc:date>
+        <rdfs:label xml:lang="fr">Après-midi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AuTravail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AuTravail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:59:04Z</dc:date>
+        <rdfs:label xml:lang="fr">Travail</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auditeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auditeur">
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:35:49Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:16:52Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AuteurTexte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AuteurTexte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auteur"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:19:52Z</dc:date>
+        <rdfs:label xml:lang="fr">Auteur de textes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autre_harmonie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autre_harmonie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harmonie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:00:11Z</dc:date>
+        <rdfs:label xml:lang="fr">Autre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autre_mélodie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autre_mélodie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mélodie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:05:58Z</dc:date>
+        <rdfs:label xml:lang="fr">Autre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autres_activite_en_cours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autres_activite_en_cours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:59:18Z</dc:date>
+        <rdfs:label xml:lang="fr">Autres</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autres_etat_emotionnel_initial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autres_etat_emotionnel_initial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:00:35Z</dc:date>
+        <rdfs:label xml:lang="fr">Autres</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Baryton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Baryton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:36:16Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Basse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Basse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:36:16Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Basson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Basson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Batterie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Batterie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#BeatsVoix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#BeatsVoix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:38:53Z</dc:date>
+        <rdfs:label>Beats accompagnés d&apos;une ou plusieurs voix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Binaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Binaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rythme"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ternaire"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:11Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Bonheur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Bonheur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:44:23Z</dc:date>
+        <rdfs:label xml:lang="fr">Caractéristiques de la musique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Chorale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Chorale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:35:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Clarinette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Clarinette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Classique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Classique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Clavecin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Clavecin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruAutres"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ClavierElectronique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ClavierElectronique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:38:53Z</dc:date>
+        <rdfs:label>Clavier électronique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Colère -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Colère">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:59Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Colère2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Colère2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:00:35Z</dc:date>
+        <rdfs:label xml:lang="fr">Colère</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Compositeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Compositeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auteur"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:19:52Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute">
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:44:23Z</dc:date>
+        <rdfs:label xml:lang="fr">Contexte d&apos;écoute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Contralto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Contralto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:36:16Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Contrebasse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Contrebasse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:36Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CorHarmonie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CorHarmonie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Cor d&apos;harmonie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CourteDurée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CourteDurée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Durée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:55Z</dc:date>
+        <rdfs:label xml:lang="fr">Courte durée (moins de 2 minutes)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Cymbales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Cymbales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Duo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Duo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:35:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Durée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Durée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Détente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Détente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Echantillonneur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Echantillonneur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:38:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ecole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ecole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:55:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Ecoute à l&apos;école</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion">
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:44:04Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:44:23Z</dc:date>
+        <rdfs:label xml:lang="fr">Emotions negatives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:44:23Z</dc:date>
+        <rdfs:label xml:lang="fr">Emotions positives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Enthousiasme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Enthousiasme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:45Z</dc:date>
+        <rdfs:label xml:lang="fr">Etat émotionnel initial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Etude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Etude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:58:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Excitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Excitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Interprète"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Homme"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:40:13Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#FlûteTraversière -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#FlûteTraversière">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+        <rdfs:label xml:lang="fr">Flûte traversière</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Forte_intensite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Forte_intensite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:04:40Z</dc:date>
+        <rdfs:label xml:lang="fr">Forte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Fortissimo_intensite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Fortissimo_intensite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:04:40Z</dc:date>
+        <rdfs:label xml:lang="fr">Fortissimo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeBlues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeBlues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mélodie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:51:59Z</dc:date>
+        <rdfs:label xml:lang="fr">Gamme blues</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeMajeure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeMajeure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mélodie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:51:59Z</dc:date>
+        <rdfs:label xml:lang="fr">Gamme majeure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeMineure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeMineure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mélodie"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:51:59Z</dc:date>
+        <rdfs:label xml:lang="fr">Gamme mineure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Groupe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Groupe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:04:46Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeMusique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeMusique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Groupe"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeOrchestre"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:15:02Z</dc:date>
+        <rdfs:label>Groupe de musique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeOrchestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GroupeOrchestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Groupe"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:15:02Z</dc:date>
+        <rdfs:label xml:lang="fr">Groupe d&apos;orchestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Guitare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Guitare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:36Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harmonie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harmonie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harpe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Harpe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:36Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Hautbois -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Hautbois">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Interprète"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:40:13Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:04:46Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruAutres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruAutres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:10Z</dc:date>
+        <rdfs:label xml:lang="fr">Autres types d&apos;instruments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:10Z</dc:date>
+        <rdfs:label xml:lang="fr">Instruments à cordes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:10Z</dc:date>
+        <rdfs:label xml:lang="fr">Instruments à percussion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:10Z</dc:date>
+        <rdfs:label xml:lang="fr">Instruments à vent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Instruments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonBrut"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:04:46Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Interprète -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Interprète">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:16:52Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Jazz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Jazz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joyeux2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joyeux2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:00:35Z</dc:date>
+        <rdfs:label xml:lang="fr">Joyeux</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Langue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Langue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Paroles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:31Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Largo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Largo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:45Z</dc:date>
+        <rdfs:label xml:lang="fr">Lieu d&apos;écoute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LongueDurée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LongueDurée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Durée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:55Z</dc:date>
+        <rdfs:label xml:lang="fr">Longue durée (plus de 5 minutes)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MainstreamMusique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MainstreamMusique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+        <rdfs:label xml:lang="fr">Musique Populaire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Maison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Maison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:55:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Ecoute à la maison</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Marimba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Marimba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Matinée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Matinée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MomentJournée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:56:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MembreGroupe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MembreGroupe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:20:38Z</dc:date>
+        <rdfs:label>Membre d&apos;un groupe musical</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MembreOrchestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MembreOrchestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:20:30Z</dc:date>
+        <rdfs:label>Membre d&apos;un orchestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoForte_intensite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoForte_intensite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:04:40Z</dc:date>
+        <rdfs:label xml:lang="fr">Mezzo-forte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoPiano_intensite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoPiano_intensite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:04:40Z</dc:date>
+        <rdfs:label xml:lang="fr">Mezzo-piano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoSoprano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoSoprano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:36:16Z</dc:date>
+        <rdfs:label xml:lang="fr">Mezzo-soprano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:38:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Moderato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Moderato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MomentJournée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MomentJournée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ContexteEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:45Z</dc:date>
+        <rdfs:label xml:lang="fr">Moment de la journée</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MoyenneDurée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MoyenneDurée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Durée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:55Z</dc:date>
+        <rdfs:label xml:lang="fr">Moyenne durée (entre 2 et 5 minutes)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique">
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:41:19Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MusiqueElectronique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MusiqueElectronique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+        <rdfs:label xml:lang="fr">Musique électronique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MusiqueRelaxante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MusiqueRelaxante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+        <rdfs:label xml:lang="fr">Musique relaxante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mélodie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Mélodie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:34:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Nombre de voix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Nuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Nuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MomentJournée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:56:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Orgue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Orgue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruAutres"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Paroles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Paroles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Peur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Peur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:59Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Piano_intensite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Piano_intensite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Intensité"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:04:40Z</dc:date>
+        <rdfs:label xml:lang="fr">Piano</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Presto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Presto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:55:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Ecoute en public</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Quatuor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Quatuor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:35:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Relaxation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Relaxation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:59:40Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:48:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rythme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rythme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Saxophone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Saxophone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soirée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soirée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MomentJournée"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:56:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Solo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Solo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:35:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonBrut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonBrut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TraitementSon"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:17:56Z</dc:date>
+        <rdfs:label xml:lang="fr">Musiques brutes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TraitementSon"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:17:56Z</dc:date>
+        <rdfs:label>Musiques traitées numériquement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soprano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soprano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:36:16Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soulagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soulagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Sport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Sport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#ActivitéEnCours"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:58:45Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Stress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:42:27Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Stressé2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Stressé2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:00:35Z</dc:date>
+        <rdfs:label xml:lang="fr">Stressé(e)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Styles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:44:23Z</dc:date>
+        <rdfs:label xml:lang="fr">Style</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Synthétiseur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Synthétiseur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonNum"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:38:53Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Sérénité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Sérénité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsPositives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:38Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tambourin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tambourin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CaracteristiquesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:50:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ternaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ternaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rythme"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:11Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Thème -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Thème">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Paroles"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:50:31Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Timbales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Timbales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TraitementSon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TraitementSon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:17:27Z</dc:date>
+        <rdfs:label xml:lang="fr">Traitement du son</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Travail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Travail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:55:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Ecoute au travail</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Triangle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Triangle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#NombreVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:35:48Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Triste2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Triste2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EtatEmotionnelInitial"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:00:35Z</dc:date>
+        <rdfs:label xml:lang="fr">Triste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tristesse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tristesse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#EmotionsNegatives"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:47:59Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trombone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trombone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trompette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trompette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tuba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tuba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruVent"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:03Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeEmotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Emotion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T17:47:29Z</dc:date>
+        <rdfs:label xml:lang="fr">Type d&apos;émotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:34:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Type de voix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:03:08Z</dc:date>
+        <rdfs:label xml:lang="fr">Types de musique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ténor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ténor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypeVoix"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:36:16Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Vibraphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Vibraphone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Violon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Violon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:36Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Violoncelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Violoncelle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruCordes"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:26:36Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Vivace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Vivace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Tempo"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:49:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voiture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voiture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LieuEcoute"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T15:55:25Z</dc:date>
+        <rdfs:label xml:lang="fr">Ecoute en voiture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#SonBrut"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#TypesMusique"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:04:46Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Xylophone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Xylophone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#InstruPercussion"/>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T16:27:29Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Individu1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Auditeur"/>
+        <music-ontology:ConfortEcoute>Bon confort d&apos;écoute</music-ontology:ConfortEcoute>
+        <music-ontology:DuréeEmotion>Durée de l&apos;émotion longue</music-ontology:DuréeEmotion>
+        <music-ontology:IntensitéEmotion>Faible intensité</music-ontology:IntensitéEmotion>
+        <music-ontology:NiveauDetachement>Fort détachement</music-ontology:NiveauDetachement>
+        <music-ontology:NiveauDistraction>Forte distraction</music-ontology:NiveauDistraction>
+        <music-ontology:Nom>Haubert</music-ontology:Nom>
+        <music-ontology:Prénom>Renault</music-ontology:Prénom>
+        <music-ontology:QualitéSonore>Très bonne qualité</music-ontology:QualitéSonore>
+        <music-ontology:TempsEcoute rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</music-ontology:TempsEcoute>
+        <music-ontology:VolumeSonore>Moyen</music-ontology:VolumeSonore>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:29:05Z</dc:date>
+        <rdfs:comment>Individu 1 - Auditeur</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Musique"/>
+        <music-ontology:AnnéeSortie rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1680</music-ontology:AnnéeSortie>
+        <music-ontology:NomScene>Pachelbel</music-ontology:NomScene>
+        <music-ontology:PopularitéMusique>Très populaire</music-ontology:PopularitéMusique>
+        <music-ontology:Titre>Canon in D</music-ontology:Titre>
+        <dc:creator>sebas</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-19T18:32:56Z</dc:date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AccordMajeur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AccordMineur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autre_harmonie"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Adagio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Allegro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Andante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Largo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Moderato"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Presto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Vivace"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AprèsMidi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Matinée"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Nuit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Soirée"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#AuTravail"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autres_activite_en_cours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Etude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Relaxation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Sport"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autre_mélodie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeBlues"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeMajeure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#GammeMineure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Autres_etat_emotionnel_initial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Colère2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Joyeux2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Stressé2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Triste2"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Chorale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Duo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Quatuor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Solo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Trio"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Classique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Jazz"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MainstreamMusique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MusiqueElectronique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MusiqueRelaxante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Pop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Rock"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#CourteDurée"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#LongueDurée"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MoyenneDurée"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Ecole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Maison"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Public"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Travail"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Voiture"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Forte_intensite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Fortissimo_intensite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoForte_intensite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#MezzoPiano_intensite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sebas/ontologies/2023/2/music-ontology#Piano_intensite"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
