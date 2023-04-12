@@ -23,7 +23,7 @@ Musicotherapie_semantique/
         |--spotify.ipynb
         |-- README.md
 
-    |-- ontologie
+    |-- ontologies
         |-- informations_chansons(1).csv
         |-- infoschansons.csv
         |-- music-ontology.owl
@@ -35,6 +35,6 @@ Musicotherapie_semantique/
         |-- test_ontologie.owl
     |-- README.md
 
-Le sous dossier "données" contient tous le notebook "spotify.ipynb" utilisé pour extraire des api les informations nécessaire dans le csv "informations_chansons.csv". Le fichier requirement.txt permet quand à d'avoir les librairies nécessaires.  
+- Le sous dossier "données" contient tous le notebook "spotify.ipynb" utilisé pour extraire des api les informations nécessaire dans le csv "informations_chansons.csv". Le fichier requirement.txt permet quand à d'avoir les librairies nécessaires.  
 
-Le sous dossier "ontologies" contient le fichier "peuplementmusic.py" qui permet de créer l'ontologie. On retrouve ensuite toutes les versions des ontologies avec les fichiers .owl
+- Le sous dossier "ontologies" contient le fichier "peuplementmusic.py" qui permet de ajouter des individus de manière automatique à des ontologies. On retrouve ensuite toutes les versions des ontologies avec les fichiers .owl
