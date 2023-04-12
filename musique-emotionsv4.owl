@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#a_pour_genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#a_pour_genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#provoque -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#provoque">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emotion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#acousticness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#acousticness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#album_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#album_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#artist_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#artist_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#danceability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#danceability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#duration_ms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#duration_ms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#energy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#energy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#instrumentalness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#instrumentalness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#key -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#key">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#liveness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#liveness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#loudness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#loudness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#mode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#mode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#release_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#song_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#song_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#song_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#song_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#speechiness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#speechiness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#tempo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#tempo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#time_signature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#time_signature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#valence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#valence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Alternative_Metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Alternative_Metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Alternative_Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Alternative_Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Ambient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Ambient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Art_Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Art_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Baroque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Baroque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Bedroom_Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Bedroom_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Celtic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Celtic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Classic_Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Classic_Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dance_Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dance_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dancehall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dancehall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dark_Ambient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dark_Ambient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dark_Trap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dark_Trap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Downtempo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Downtempo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dream_Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dream_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dungeon_Synth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Dungeon_Synth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Easy_Listening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Easy_Listening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Electropop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Electropop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emo_Rap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emo_Rap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emotion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Eurodance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Eurodance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Folk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Folk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Funk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Funk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Glam_Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Glam_Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Hip_Hop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Hip_Hop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Indie_Folk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Indie_Folk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Indie_Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Indie_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#K-Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#K-Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Latin_Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Latin_Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Lounge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Lounge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Motown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Motown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Music"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Neoclassical_Darkwave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Neoclassical_Darkwave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Neutral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Neutral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#New_Jack_Swing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#New_Jack_Swing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#New_Wave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#New_Wave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Nu_Disco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Nu_Disco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Piano_Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Piano_Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Pop_Punk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Pop_Punk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Pop_Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Pop_Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Emotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Queercore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Queercore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Rap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Rap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Reggae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Reggae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Singer-Songwriter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Singer-Songwriter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Slowcore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Slowcore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Soft_Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Soft_Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Soul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Soul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Swing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Swing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Synthpop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Synthpop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Trap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Trap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Trip_Hop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Trip_Hop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Tropical_House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Tropical_House">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Video_Game_Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Video_Game_Music">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Witch_House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Witch_House">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#angry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#angry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#chill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#chill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#confident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#confident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#focus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#focus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Neutral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#happy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#happy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#hot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#hot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#inspiration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#inspiration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#love -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#love">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#motivated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#motivated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#old_nostalgic_songs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#old_nostalgic_songs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Positive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#sad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#sad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#sad_nostalgic_songs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#sad_nostalgic_songs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#scary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#scary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#tired -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#tired">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Negative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#R&amp;B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#R&amp;B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alice/ontologies/2023/3/untitled-ontology-23#Genre"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
